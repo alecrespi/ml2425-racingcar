@@ -2,6 +2,7 @@
 DATA/
 models/
 PLAYGROUND.ipynb
+hyperband_tuning/
 
 
 # Byte-compiled / optimized / DLL files
