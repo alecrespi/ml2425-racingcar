@@ -16,25 +16,31 @@ augmentors = [
         rotation_range=45,         # Rotate up to 15 degrees
         # width_shift_range=0.2,     # Shift horizontally up to 20%
         # height_shift_range=0.2,    # Shift vertically up to 20%
+        shear_range=0.2,           # She ar intensity
+        zoom_range=0.2,            # Zoom in/out up to 20%
+        brightness_range=[0.8, 1.2], # Adjust brightness
+        vertical_flip=True       # Flip vertically
+    ),
+    ImageDataGenerator(
+        # rescale=1.0/255,
+        rotation_range=15,         # Rotate up to 15 degrees
+        width_shift_range=0.2,     # Shift horizontally up to 20%
+        height_shift_range=0.2,    # Shift vertically up to 20%
         shear_range=0.2,           # Shear intensity
         zoom_range=0.2,            # Zoom in/out up to 20%
         brightness_range=[0.8, 1.2], # Adjust brightness
         vertical_flip=True       # Flip vertically
-
+    ),
+    ImageDataGenerator(
+        # rescale=1.0/255,
+        rotation_range=180,         # Rotate up to 15 degrees
+        # width_shift_range=0.2,     # Shift horizontally up to 20%
+        # height_shift_range=0.2,    # Shift vertically up to 20%
+        shear_range=0.1,           # Shear intensity
+        zoom_range=0.1,            # Zoom in/out up to 20%
+        brightness_range=[0.8, 1.2], # Adjust brightness
+        horizontal_flip=True       # Flip horizontally
     )
-    # ImageDataGenerator(
-    #     rescale=1.0/255,
-    #     rotation_range=15,         
-    #     width_shift_range=0.2,    
-    #     height_shift_range=0.2,    
-    #     horizontal_flip=True      
-    # ),
-    # ImageDataGenerator(
-    #     rescale=1.0/255,
-    #     shear_range=0.2,         
-    #     zoom_range=0.2,          
-    #     brightness_range=[0.8, 1.2]  
-    # )
 ]
 
 # Parameters
